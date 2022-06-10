@@ -122,3 +122,37 @@ console.log(mondayMenu);
 mondayMenu['breakfast'] = 'toast'; // Bracket notation
 console.log(mondayMenu);
 
+// Update an Object Nondestructively using the Spread Operator
+const tuesdayMenu = {
+    breakfast: 'pancakes',
+    lunch: 'hamburger',
+    dinner: 'sushi'
+}
+const sundayMenu = {
+    ...tuesdayMenu,
+    breakfast: 'lasagna'
+}
+console.log(sundayMenu);
+console.log(tuesdayMenu);
+// The Spread Operator copies all of the properties of the object it is applied to into a new object
+// The Spread Operator can be used to update an object nondestructively
+// The Spread Operator can be used to create a new object from an existing object
+// The Spread Operator can be used to copy an array
+
+// Remove a property from an object using the delete keyword
+const wednesdayMenu = {
+    breakfast: 'pancakes',
+    lunch: 'hamburger',
+    dinner: 'sushi'
+}
+delete wednesdayMenu.breakfast;
+console.log(wednesdayMenu);
+
+
+// Mindbending stuff, probably not gonna remember this
+const myArray = [1, 2, 3, 4, 5];
+myArray["1"] = "hello";
+console.log(myArray);
+myArray["01"] = "world";
+console.log(myArray);
+
