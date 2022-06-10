@@ -200,3 +200,56 @@ const family = {
     }
 }
 console.table(family);
+
+
+
+// LOOPS
+// For Loop
+let books = [
+    'The Hobbit',
+    'The Lord of the Rings',
+    'The Catcher in the Rye',
+    'The Great Gatsby',
+    'The Grapes of Wrath',
+]
+
+function loopThroughBooks(books) {
+    for (let i = 0; i < books.length; i++) {
+        console.log(books[i]);
+    }
+}
+
+loopThroughBooks(books);
+
+// For of Loop
+let books2 = [
+    'The Hobbit',
+    'The Lord of the Rings',
+    'The Catcher in the Rye',
+    'The Great Gatsby',
+    'The Grapes of Wrath',
+]
+
+function loopThroughBooks2(books2) {
+    for (let book of books2) {
+        console.log(book);
+    }
+}
+loopThroughBooks2(books2);
+
+
+// For in Loop
+let bookAuthor = {
+    George: 'The Lord of the Rings',
+    John: 'The Hobbit',
+    Jane: 'The Catcher in the Rye',
+    Jack: 'The Great Gatsby',
+    Jill: 'The Grapes of Wrath',
+}
+
+function loopThroughBooks3(bookAuthor) {
+    for (let i in bookAuthor) {
+        console.log(bookAuthor[i]);
+    }
+}
+loopThroughBooks3(bookAuthor);
