@@ -156,3 +156,47 @@ console.log(myArray);
 myArray["01"] = "world";
 console.log(myArray);
 
+
+// Debugging
+const number = 10
+
+function addTwoNumbers(a, b) {
+    return a + b;
+}
+
+function multiplyByTwo(a) {
+    return a * 2;
+}
+console.log(multiplyByTwo(addTwoNumbers(5, 2)));
+
+// Some questions to consider in debugging:
+// Is what we passed in what the function expects?
+// Is the thing the fuction returns what we expect?
+// Does the operator work as expected?
+
+// Self defined debugging functions
+// console.error()
+// console.warn()
+
+
+
+// TABLES
+// Create a table
+const family = {
+    father: {
+        firstName: 'John',
+        lastName: 'Doe',
+        age: 50
+    },
+    mother: {
+        firstName: 'Jane',
+        lastName: 'Doe',
+        age: 48
+    },
+    sister: {
+        firstName: 'Sally',
+        lastName: 'Doe',
+        age: 45
+    }
+}
+console.table(family);
